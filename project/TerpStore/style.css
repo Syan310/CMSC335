@@ -1,0 +1,252 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box; 
+}
+
+html {
+    border: 10px solid white; 
+}
+
+body {
+    background-image: url('images/JimHenson.jpg');
+    background-size: cover;
+    border: 10px solid green;
+}
+
+
+.terpstore{
+    font-size: 100px;
+    display: inline-block;
+    padding: 10px;
+    color: azure;
+    text-decoration:underline;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(211, 211, 211, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    max-width: 400px;
+    border: 2px solid black;
+}
+
+.container a{
+    color:brown;
+}
+
+.container a:visited {
+    color: beige;
+}
+
+.container a:hover {
+    font-size: 90%; 
+}
+
+.cata-button{
+    padding: 10px 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.order-button{
+    padding: 10px 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.cata-inq{
+    font-size: 100px;
+    display: inline-block;
+    color: azure;
+    text-decoration: underline;
+    background-color:rgba(0, 0, 0, .4);
+}
+
+.catalog-container{
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 5px solid azure;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.text-container{
+    white-space: nowrap;
+}
+
+#item-choice{
+    font-size: 20px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px; 
+}
+
+
+.form-row label {
+    width: 150px; 
+    margin-right: 50px; 
+    text-decoration: underline;
+    font-size: 25px;
+}
+  
+.form-full-row {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-full-row label {
+    display: block; 
+    margin-bottom: 5px;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+#email1{
+    margin-left: 50px
+}
+
+#info{
+    width: 100%;
+    height: 200px;
+}
+
+#submit{
+    font-size: 32px;
+    border: 2px solid black;
+}
+#reset{
+    font-size: 32px;
+    margin-left: 12px;
+    border: 2px solid black;
+}
+
+#PO-h1{
+    font-size: 100px;
+    display: inline-block;
+    color: azure;
+    text-decoration: underline;
+    background-color:rgba(0, 0, 0, .4);
+}
+.PO-container{
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 5px solid azure;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.PO-form-row label {
+    margin-right: 10px; 
+    text-decoration: underline;
+    font-size: 30px;
+  }
+
+.PO-form-row input:not(:last-child) {
+    margin-right: 5px;
+}
+
+.credit-row label{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.credit-row{
+    margin-bottom: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.credit-row input{
+    width: 50px; 
+    position: relative; 
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+  display: flex;
+  height: 2px; 
+  width: 8px; 
+  background-color: #000; 
+  align-self: center; 
+  margin: 0 4px;
+}
+
+.PO-form-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#submit1{
+    font-size: 30px;
+    display: block;
+    margin-right: 10px;
+    border: 1px solid black;
+    padding:5px;
+    outline: 0.5px solid black;
+}
+
+#clear{
+    font-size: 30px;
+    display: block;
+    margin-right: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    outline: 0.5px solid black;
+}
+
+footer{
+    position:fixed;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: red;
+    border: 10px solid gray;
+    box-shadow: 0 0 0 10px skyblue;
+    padding: 20px 0;
+}
+
+footer div{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+footer a{
+    color: white;
+    font-size:xx-large;
+    font: bold;
+}
+
+footer a:hover {
+    font-size: 0.9rem;
+}

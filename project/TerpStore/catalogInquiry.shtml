@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog Inquiry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="cata-inq">Catalog Inquiry</h1>
+
+    <div class="catalog-container">
+        <form action="http://npp.cs.umd.edu/cmsc335/projects/TerpStore/catalogInquiry.php" method="get">
+            <div class="form-row text-container">
+                <label for="item-choice" id="item-choice-label">Item Category</label>
+                <select id="item-choice" name="item-choice" required autofocus>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="books">Books</option>
+                    <option value="music">Music</option>
+                    <option value="food">Food</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-row text-container">
+                <label for="maximumCost">Maximum Cost($)</label>
+                <input type="number" id="maximumCost" name="maximumCost" min="1" max="1000" step="5" value="1" required>
+            </div>
+            
+            <div class="form-row text-container">
+                <label>
+                    <input type="checkbox" name="availableOnCampus"> Available on Campus
+                </label>
+            </div>
+            <div class="form-row text-container">
+                <label>
+                    <input type="checkbox" name="availableOnline" checked> Available Online
+                </label>
+            </div>
+            <div class="form-full-row">
+                <label for="info">Additional Information:</label>
+                <textarea id="info" name="info"></textarea>
+            </div>
+            <div class="form-row text-container">
+                <label for="email1">Contact Email Address:</label>
+                <input type="email" id="email1" name="email" placeholder="example@terpmail.umd.edu">
+            </div>
+            <div class="form-row text-container">
+                <button type="submit" id="submit">Submit Inquiry</button>
+                <button type="reset" id="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+
+   <!--#include virtual="footer.shtml" -->
+
+</body>
+</html>

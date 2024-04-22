@@ -1,0 +1,62 @@
+/* Do not remove this rule */
+
+html {
+    font-size: 14px;
+}
+
+
+#brownt {
+    color: brown;
+}
+
+.hover-text {
+    color: brown;
+}
+  
+.hover-text:hover {
+    color: red;
+}
+
+p:first-letter {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.outer {
+    border: 0.714rem double rgb(159, 4, 4);
+    background-color: antiquewhite;
+    padding: 0.714rem;
+  }
+  
+table{
+    border: 0.2rem double black;
+    
+}
+
+th{
+    color: red;
+    background-color: antiquewhite;
+}
+
+tr{
+    border: 0.055rem double black;
+}
+
+td{
+    border: 0.055rem double black;
+}
+
+
+#addi{
+    color:brown
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+  .inner {
+    padding: 0.716rem;
+    border: 0.93rem groove rgb(71, 0, 255);
+    background-color: white;
+  }

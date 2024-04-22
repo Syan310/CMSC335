@@ -1,0 +1,54 @@
+html{
+    border: 20px groove darkred;
+}
+
+.photoViewer{
+    color: darkred;
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.image-container{
+    border: 10px double black;
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0;
+}
+
+.image-container img{
+    max-width: 100%;  
+    max-height: 500px; 
+    width: auto;
+    height: auto;
+}
+
+.status-message{
+    color:red;
+}
+
+.local-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+
+.local-form-group{
+    margin-bottom: 0;
+}
+
+#photos-folder-group { grid-area: photosfolder; }
+#common-name-group { grid-area: commonname; }
+#start-photo-number-group { grid-area: startnumber; }
+#end-photo-number-group { grid-area: endnumber; }
+.load-button-group { grid-area: loadbutton; }
+
+.local-box {
+    grid-template-areas:
+    "photosfolder commonname"
+    "startnumber endnumber"
+    "loadbutton loadbutton";
+}
+

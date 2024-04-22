@@ -1,0 +1,33 @@
+:root {
+    --background-color: #000020;
+    --text-color: #ed0c0c;
+    --alternate-row-color: #000040;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('space.png');
+    background-size: cover;
+    color: var(--text-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ffffff;
+}
+
+thead {
+    background-color: var(--background-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--alternate-row-color);
+}
+
+a {
+    color: #FFD700;
+}

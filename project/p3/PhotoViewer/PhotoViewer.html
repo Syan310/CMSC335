@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Photo Viewer</title>
+    <script src="code.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="photoViewer">Photo Viewer</h1>
+
+    <div class="image-container">
+        <img src="InitialImage.jpg" alt="umd_logo" id="logo">
+    </div>
+
+    <fieldset class="status-box">
+        <legend>Status</legend>
+        
+        <div class="input-field">
+            <label for="photo-status">Photo Being Displayed:</label>
+            <input type="text" id="photo-status" name="photo-status" disabled>
+        </div>
+
+        <div id="status-message" class="status-message">
+            Photo Viewer System
+        </div>
+    </fieldset>
+
+    <fieldset class="local-box">
+        <legend>Loading Images (Local Folder)</legend>
+
+        <div id="photos-folder-group" class="local-form-group">
+            <label for="photos-folder">Photos' Folder:</label>
+            <input type="text" id="photos-folder" name="photos-folder" value="umcp/">
+        </div>
+        
+        <div id="common-name-group" class="local-form-group">
+            <label for="common-name">Common Name:</label>
+            <input type="text" id="common-name" name="common-name" value="college">
+        </div>
+        
+        <div id="start-photo-number-group" class="local-form-group">
+            <label for="start-photo-number">Start Photo Number:</label>
+            <input type="number" id="start-photo-number" name="start-photo-number" value="2">
+        </div>
+        
+        <div id="end-photo-number-group" class="local-form-group">
+            <label for="end-photo-number">End Photo Number:</label>
+            <input type="number" id="end-photo-number" name="end-photo-number" value="4">
+        </div>
+        
+        <div id="load-button-group" class="local-form-group">
+            <button type="submit" id="load-photos">Load Photos</button>
+        </div>
+    </fieldset>
+
+
+
+
+    <fieldset class="json-box">
+        <legend>Loading Images (JSON File)</legend>
+
+        <div>
+            <label for="URL">URL:</label>
+            <input type="text" id="URL" value="http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/imagesSet1.json" size="80">
+            <button onclick="loadJSON()">Load JSON</button>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Iterating</legend>
+        <button id="previous-photo">Previous Photo</button>
+        <button id="next-photo">Next Photo</button>
+        <button id="first-photo">First Photo</button>
+        <button id="last-photo">Last Photo</button>
+    </fieldset>
+
+    <fieldset >
+        <legend>SlideShows</legend>
+        <button id="slideshow">SlideShow</button>
+        <button id="random-slideshow">RandomSlideShow</button>
+        <button id="stop-slideshow">StopSlideShow</button>
+    </fieldset>
+
+    <hr>
+    <button id="reset">Reset Form Values</button>
+</body>
+</html>
